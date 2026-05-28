@@ -4,7 +4,7 @@ library(bullwhipgame)
 
 ui <- shinyUI(
   navbarPage(
-    "bullwhipgame",
+    "bullwhipgame (Archiviert)",
     id = "mainNavbarPage",
     theme = "flatly.css",
     uiModDesc("Description"),
@@ -23,12 +23,12 @@ server <- shinyServer(function(input, output, session) {
   observe({
     initial_rv(bullwhipgame::initVal %>% select(Demand))
   })
-  
+
   initial_rv <- callModule(module = srvModInitialValuesCSV,
                            id = "Initial",
                            initial = initial_rv)
   callModule(module = srvModPlay,
-                           id = "Play",
+             id = "Play",
              initial = initial_rv)
   callModule(module = srvModGlossary,
              id = "Glossary")

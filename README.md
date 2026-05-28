@@ -1,8 +1,13 @@
 # bullwhipgame
 
+**Dieses Projekt wird nicht mehr aktiv gepflegt.**
+
+Letzter Push: 2018-08-20 (2838 Tage her).
+
+Dieses Repository wurde archiviert und wird nicht mehr aktiv gewartet oder aktualisiert. Für weitere Informationen oder Fragen wenden Sie sich bitte an die ursprünglichen Autoren oder Ersteller des Projekts.
+
 The bullwhipgame is an educational game that has as purpose the illustration and exploration of 
 the *bullwhip effect*, i.e. the increase in demand variability along the supply chain.
-
 
 The game simulates the distribution process of a single product that uses a four stages supply chain: 
 reailer, wholesaler, distributor and factory. The members of the supply chain need to
@@ -11,9 +16,6 @@ participants use the same inventory replenishment policy, forecast method, deliv
 Holding and shortage cost are fixed and information sharing and cooperation is not allowed. 
 
 The goal of the game is to minimize the total inventory cost in the supply chain.
-
-
-
 
 **Installation:**
 
