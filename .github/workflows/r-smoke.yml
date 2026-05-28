@@ -1,0 +1,23 @@
+name: R smoke checks
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Check package structure and R syntax
+        run: |
+          Rscript -e 'stopifnot(file.exists("DESCRIPTION"), file.exists("NAMESPACE"), dir.exists("R"), file.exists("inst/shiny/app.R"))'
+          Rscript -e 'for (file in list.files("R", pattern = "[.]R$", full.names = TRUE)) parse(file)'
