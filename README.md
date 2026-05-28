@@ -13,6 +13,12 @@ Holding and shortage cost are fixed and information sharing and cooperation is n
 The goal of the game is to minimize the total inventory cost in the supply chain.
 
 
+## Maintenance Status
+
+This repository is kept as a historical educational Shiny app for exploring the
+bullwhip effect. It has not been actively maintained since 2018, so dependencies,
+deployment instructions, and package checks may need updates before production use.
+
 
 
 **Installation:**
